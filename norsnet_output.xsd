@@ -1,0 +1,14 @@
+<xs:schema xmlns="http://rostlab.org/norsnet/output"
+		targetNamespace="http://rostlab.org/norsnet/output" xmlns:bx="http://bioxsd.org/BioXSD-1.1"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ 		xmlns:sawsdl="http://www.w3.org/ns/sawsdl"
+		attributeFormDefault="unqualified" elementFormDefault="qualified"
+		version="1.0.0">
+	<xs:import namespace="http://bioxsd.org/BioXSD-1.1" schemaLocation="http://bioxsd.org/BioXSD-1.1.xsd"/>
+
+	<xs:element name="norsOutput" type="bx:FeatureRecord" sawsdl:modelReference="http://edamontology.org/data_2722">
+		<xs:annotation>
+			<xs:documentation>norsnet BioXSD output: disorder prediction [http://edamontology.org/data_2722 Protein disorder prediction].</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+</xs:schema>
