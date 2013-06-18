@@ -1,5 +1,4 @@
-<xs:schema xmlns="http://rostlab.org/norsnet/output"
-		targetNamespace="http://rostlab.org/norsnet/output" xmlns:bx="http://bioxsd.org/BioXSD-1.1"
+<xs:schema targetNamespace="http://rostlab.org/norsnet/output" xmlns:bx="http://bioxsd.org/BioXSD-1.1"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
  		xmlns:sawsdl="http://www.w3.org/ns/sawsdl"
 		attributeFormDefault="unqualified" elementFormDefault="qualified"

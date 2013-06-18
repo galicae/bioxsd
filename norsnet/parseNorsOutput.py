@@ -27,10 +27,11 @@ rootName = et.QName(NR, 'norsOutput')
 root = et.Element(rootName, nsmap=NS_MAP)
 
 # create attribute xsi:schemaLocation
-root.set(et.QName(XSI, 'schemaLocation'), "http://rostlab.org/freecontact/output www.cip.ifi.lmu.de/~papadopoulos/bioXSD/norsnet_output.xsd")
+root.set(et.QName(XSI, 'schemaLocation'), "http://rostlab.org/norsnet/output http://i12r-tbl.informatik.tu-muenchen.de/~niko/norsnet_output.xsd")
 
 # now create children elements. We need bx:referenceSequence and bx:blockWithOccurrenceReferences
 rSeq = et.Element(et.QName(BX, 'referenceSequence'), nsmap=NS_MAP)
+seqRec = et.Element(et.QName(BX, 'sequenceRecord'), nsmap=NS_MAP)
 sequence = "" # empty string. We will append the sequence found in every line.
 block = et.Element(et.QName(BX, 'blockWithOccurrenceReferences'), nsmap=NS_MAP)
 
@@ -52,7 +53,7 @@ catConcept.set("ontologyName", "EDAM")
 catConcept.set("term", "Protein flexibility and motion analysis")
 
 citation = et.Element(et.QName(BX, 'citation'), nsmap=NS_MAP)
-citation.set("date", "2007-07")
+citation.set("date", "2007-07-20")
 citation.set("accession", "17658943")
 citation.set("entryUri", "http://www.ncbi.nlm.nih.gov/pubmed/17658943")
 citation.set("dbName", "PubMed")
@@ -61,19 +62,19 @@ method.append(catConcept)
 method.append(citation)
 
 # scoreTypes
-node1 = et.Element(et.QName(BX, 'node1'), nsmap=NS_MAP)
+node1 = et.Element(et.QName(BX, 'scoreType'), nsmap=NS_MAP)
 node1.set("localId", "n1")
-node2 = et.Element(et.QName(BX, 'node2'), nsmap=NS_MAP)
+node2 = et.Element(et.QName(BX, 'scoreType'), nsmap=NS_MAP)
 node2.set("localId", "n2")
-pred = et.Element(et.QName(BX, 'pred'), nsmap=NS_MAP)
+pred = et.Element(et.QName(BX, 'scoreType'), nsmap=NS_MAP)
 pred.set("localId", "pred")
-n40 = et.Element(et.QName(BX, 'n40'), nsmap=NS_MAP)
+n40 = et.Element(et.QName(BX, 'scoreType'), nsmap=NS_MAP)
 n40.set("localId", "n40")
-n40fil = et.Element(et.QName(BX, 'n40fil'), nsmap=NS_MAP)
+n40fil = et.Element(et.QName(BX, 'scoreType'), nsmap=NS_MAP)
 n40fil.set("localId", "n40f")
-n59 = et.Element(et.QName(BX, 'n59'), nsmap=NS_MAP)
+n59 = et.Element(et.QName(BX, 'scoreType'), nsmap=NS_MAP)
 n59.set("localId", "n59")
-n59fil = et.Element(et.QName(BX, 'n59fil'), nsmap=NS_MAP)
+n59fil = et.Element(et.QName(BX, 'scoreType'), nsmap=NS_MAP)
 n59fil.set("localId", "n59f")
 
 # annotation. Contains feature, condensedReferences and many occurrences
@@ -164,7 +165,8 @@ block.append(annotation)
 seqObj = et.Element(et.QName(BX, 'sequence'), nsmap=NS_MAP)
 seqObj.text = sequence
 
-rSeq.append(seqObj)
+seqRec.append(seqObj)
+rSeq.append(seqRec)
 
 # append elements
 root.append(rSeq)
@@ -172,5 +174,4 @@ root.append(block)
 
 # create sheet and print it
 sheet = et.ElementTree(root)
-outfile = open(sys.argv[2], 'w')
-sheet.write(outfile, pretty_print=True)
+print(et.tostring(sheet, pretty_print=True))
