@@ -1,0 +1,67 @@
+----------------------------------------------------------------------------------------
+                                    DISULFIND                                  
+              Cysteines Disulfide Bonding State and Connectivity Predictor     
+----------------------------------------------------------------------------------------
+
+
+Query Name: Q30201
+
+
+         .........10........20........30........40........50........60........70........
+AA       MGPRARPALLLLMLLQTAVLQGRLLRSHSLHYLFMGASEQDLGLSLFEALGYVDDQLFVFYDHESRRVEPRTPWVSSRI
+DB_state                                                                                
+DB_conf                                                                                 
+DB_flip                                                                                 
+
+         80........90........100.......110.......120.......130.......140.......150......
+AA       SSQMWLQLSQSLKGWDHMFTVDFWTIMENHNHSKESHTLQVILGCEMQEDNSTEGYWKYGYDGQDHLEFCPDTLDWRAA
+DB_state                                             0                        0         
+DB_conf                                              0                        4         
+DB_flip                                              *                                  
+
+         .160.......170.......180.......190.......200.......210.......220.......230.....
+AA       EPRAWPTKLEWERHKIRARQNRAYLERDCPAQLQQLLELGRGVLDQQVPPLVKVTHHVTSSVTTLRCRALNYYPQNITM
+DB_state                             0                                     0            
+DB_conf                              1                                     1            
+DB_flip                                                                                 
+
+         ..240.......250.......260.......270.......280.......290.......300.......310....
+AA       KWLKDKQPMDAKEFEPKDVLPNGDGTYQGWITLAVPPGEEQRYTCQVEHPGLDQPLIVIWEPSPSGTLVIGVISGIAVF
+DB_state                                             0                                  
+DB_conf                                              1                                  
+DB_flip                                                                                 
+
+         ...320.......330.......340......
+AA       VVILFIGILFIILRKRQGSRGAMGHYVLAERE
+DB_state                                 
+DB_conf                                  
+DB_flip                                  
+
+----------------------------------------------------------------------------------------
+
+Abbreviations used:
+
+AA        = amino acid sequence
+DB_state  = predicted disulfide bonding state
+            (1=disulfide bonded, 0=not disulfide bonded)
+DB_conf   = confidence of disulfide bonding state prediction (0=low to 9=high)
+DB_flip   = an asterisk (*) indicates that the viterbi aligner overruled the
+            most likely predition for that residue in order to achieve a
+            consistent prediction at a protein level (even number of disulfide
+            bonded cysteines, as interchain bonds are ignored).
+----------------------------------------------------------------------------------------
+
+Please cite:
+
+A. Ceroni, A. Passerini, A. Vullo and P. Frasconi.
+"DISULFIND: a Disulfide Bonding State and Cysteine Connectivity Prediction Server"
+Nucleic Acids Research, 34(Web Server issue):W177--W181, 2006.
+
+----------------------------------------------------------------------------------------
+
+Questions and comments are very appreciated.
+Please, send email to: cystein@dsi.unifi.it
+
+Copyright 2006, Alessio Ceroni, Andrea Passerini, Alessandro Vullo
+
+----------------------------------------------------------------------------------------
