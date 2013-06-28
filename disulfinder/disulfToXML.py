@@ -11,7 +11,7 @@ parser.add_option("-o","--output",dest="outFile",
 
 options,args = parser.parse_args()
 
-
+#doto: read from stdin
 def parseDisulfinder(inFile):
 
 	data= defaultdict(list)
