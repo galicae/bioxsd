@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<xs:schema xmlns="http://rostlab.org/disulfinder/output" targetNamespace="http://rostlab.org/disulfinder/output" xmlns:bx="http://bioxsd.org/BioXSD-1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0.0">
+
+	<xs:import namespace="http://bioxsd.org/BioXSD-1.1" schemaLocation="http://bioxsd.org/BioXSD-1.1.xsd"/>
+
+ 	<xs:element name="disulfideBridgePrediction" type="bx:FeatureRecord" sawsdl:modelReference="http://edamontology.org/data_0894">
+		<xs:annotation>
+			<xs:documentation>Disulfinder prediction output: Cystein disulfide bonding state and connectivity prediction. [http://edamontology.org/data_0894 Amino acid annotation].</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+</xs:schema>
