@@ -1,0 +1,62 @@
+<di:disulfideBridgePrediction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bx="http://bioxsd.org/BioXSD-1.1" xmlns:di="http://rostlab.org/disulfinder/output">
+  <bx:referenceSequence>
+    <bx:sequenceRecord xsi:type="bx:GeneralAminoacidSequenceRecord">
+      <bx:sequence>MGPRARPALLLLMLLQTAVLQGRLLRSHSLHYLFMGASEQDLGLSLFEALGYVDDQLFVFYDHESRRVEPRTPWVSSRISSQMWLQLSQSLKGWDHMFTVDFWTIMENHNHSKESHTLQVILGCEMQEDNSTEGYWKYGYDGQDHLEFCPDTLDWRAAEPRAWPTKLEWERHKIRARQNRAYLERDCPAQLQQLLELGRGVLDQQVPPLVKVTHHVTSSVTTLRCRALNYYPQNITMKWLKDKQPMDAKEFEPKDVLPNGDGTYQGWITLAVPPGEEQRYTCQVEHPGLDQPLIVIWEPSPSGTLVIGVISGIAVFVVILFIGILFIILRKRQGSRGAMGHYVLAERE</bx:sequence>
+    </bx:sequenceRecord>
+  </bx:referenceSequence>
+  <bx:blockWithOccurenceReferences>
+    <bx:method name="disulfinder" localId="M#di">
+      <bx:categoryConcept conceptURI="http://edamontology.org/operation_1850" ontologyName="EDAM" term="Protein cysteine and disulfide bond assignment" accession="operation_1850"/>
+      <bx:citation date="2013-06-28"/>
+    </bx:method>
+    <bx:scoreType localId="S#DB_stat"/>
+    <bx:scoreType localId="S#DB_conf"/>
+    <bx:scoreType localId="S#DB_flip"/>
+    <bx:annotation>
+      <bx:feature/>
+      <bx:condensedReferences>
+        <bx:methodIDRef>M#di</bx:methodIDRef>
+      </bx:condensedReferences>
+      <bx:occurence>
+        <bx:position xsi:type="bxSequencePosition">
+          <bx:point xsi:type="bxSequencePoint" pos="123"/>
+        </bx:position>
+        <bx:score value="0" scoreTypeIdRef="S#DB_state"/>
+        <bx:score value="0" scoreTypeIdRef="S#DB_conf"/>
+        <bx:score value="*" scoreTypeIdRef="S#DB_flip"/>
+      </bx:occurence>
+      <bx:occurence>
+        <bx:position xsi:type="bxSequencePosition">
+          <bx:point xsi:type="bxSequencePoint" pos="148"/>
+        </bx:position>
+        <bx:score value="0" scoreTypeIdRef="S#DB_state"/>
+        <bx:score value="4" scoreTypeIdRef="S#DB_conf"/>
+        <bx:score value=" " scoreTypeIdRef="S#DB_flip"/>
+      </bx:occurence>
+      <bx:occurence>
+        <bx:position xsi:type="bxSequencePosition">
+          <bx:point xsi:type="bxSequencePoint" pos="186"/>
+        </bx:position>
+        <bx:score value="0" scoreTypeIdRef="S#DB_state"/>
+        <bx:score value="1" scoreTypeIdRef="S#DB_conf"/>
+        <bx:score value=" " scoreTypeIdRef="S#DB_flip"/>
+      </bx:occurence>
+      <bx:occurence>
+        <bx:position xsi:type="bxSequencePosition">
+          <bx:point xsi:type="bxSequencePoint" pos="224"/>
+        </bx:position>
+        <bx:score value="0" scoreTypeIdRef="S#DB_state"/>
+        <bx:score value="1" scoreTypeIdRef="S#DB_conf"/>
+        <bx:score value=" " scoreTypeIdRef="S#DB_flip"/>
+      </bx:occurence>
+      <bx:occurence>
+        <bx:position xsi:type="bxSequencePosition">
+          <bx:point xsi:type="bxSequencePoint" pos="281"/>
+        </bx:position>
+        <bx:score value="0" scoreTypeIdRef="S#DB_state"/>
+        <bx:score value="1" scoreTypeIdRef="S#DB_conf"/>
+        <bx:score value=" " scoreTypeIdRef="S#DB_flip"/>
+      </bx:occurence>
+    </bx:annotation>
+  </bx:blockWithOccurenceReferences>
+</di:disulfideBridgePrediction>
