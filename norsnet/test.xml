@@ -1,0 +1,390 @@
+<nr:norsOutput xmlns:nr="http://rostlab.org/norsnet/output" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bx="http://bioxsd.org/BioXSD-1.1" xsi:schemaLocation="http://rostlab.org/norsnet/output http://i12r-tbl.informatik.tu-muenchen.de/~niko/norsnet_output.xsd">
+  <bx:referenceSequence>
+    <bx:sequenceRecord>
+      <bx:sequence>DYKDHDGDYKDHDIDYKDDDDKLAAANSNV</bx:sequence>
+    </bx:sequenceRecord>
+  </bx:referenceSequence>
+  <bx:blockWithOccurrenceReferences>
+    <bx:method localId="nrs" name="norsnet">
+      <bx:categoryConcept accession="operation_244" conceptUri="http://edamontology.org/operation_0244" ontologyName="EDAM" term="Protein flexibility and motion analysis"/>
+      <bx:citation date="2007-07-20" accession="17658943" entryUri="http://www.ncbi.nlm.nih.gov/pubmed/17658943" dbName="PubMed"/>
+    </bx:method>
+    <bx:scoreType localId="n1"/>
+    <bx:scoreType localId="n2"/>
+    <bx:scoreType localId="pred"/>
+    <bx:scoreType localId="n40"/>
+    <bx:scoreType localId="n40f"/>
+    <bx:scoreType localId="n59"/>
+    <bx:scoreType localId="n59f"/>
+    <bx:annotation>
+      <bx:feature>
+        <bx:name>Protein Disorder Prediction</bx:name>
+        <bx:equalConcept term="Protein disorder prediction based on a neural network (2 nodes)"/>
+      </bx:feature>
+      <bx:condensedReferences>
+        <bx:methodIdRef>nrs</bx:methodIdRef>
+      </bx:condensedReferences>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="1" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="48"/>
+        <bx:score scoreTypeIdRef="n2" value="51"/>
+        <bx:score scoreTypeIdRef="pred" value="0.48"/>
+        <bx:score scoreTypeIdRef="n40" value="N"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="2" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="29"/>
+        <bx:score scoreTypeIdRef="n2" value="70"/>
+        <bx:score scoreTypeIdRef="pred" value="0.29"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="3" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="16"/>
+        <bx:score scoreTypeIdRef="n2" value="83"/>
+        <bx:score scoreTypeIdRef="pred" value="0.16"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="4" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="30"/>
+        <bx:score scoreTypeIdRef="n2" value="69"/>
+        <bx:score scoreTypeIdRef="pred" value="0.30"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="5" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="26"/>
+        <bx:score scoreTypeIdRef="n2" value="73"/>
+        <bx:score scoreTypeIdRef="pred" value="0.26"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="6" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="20"/>
+        <bx:score scoreTypeIdRef="n2" value="79"/>
+        <bx:score scoreTypeIdRef="pred" value="0.20"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="7" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="39"/>
+        <bx:score scoreTypeIdRef="n2" value="59"/>
+        <bx:score scoreTypeIdRef="pred" value="0.40"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="8" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="33"/>
+        <bx:score scoreTypeIdRef="n2" value="66"/>
+        <bx:score scoreTypeIdRef="pred" value="0.33"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="9" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="36"/>
+        <bx:score scoreTypeIdRef="n2" value="62"/>
+        <bx:score scoreTypeIdRef="pred" value="0.37"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="10" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="24"/>
+        <bx:score scoreTypeIdRef="n2" value="75"/>
+        <bx:score scoreTypeIdRef="pred" value="0.24"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="11" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="25"/>
+        <bx:score scoreTypeIdRef="n2" value="74"/>
+        <bx:score scoreTypeIdRef="pred" value="0.25"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="12" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="15"/>
+        <bx:score scoreTypeIdRef="n2" value="84"/>
+        <bx:score scoreTypeIdRef="pred" value="0.15"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="13" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="15"/>
+        <bx:score scoreTypeIdRef="n2" value="84"/>
+        <bx:score scoreTypeIdRef="pred" value="0.15"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="14" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="17"/>
+        <bx:score scoreTypeIdRef="n2" value="82"/>
+        <bx:score scoreTypeIdRef="pred" value="0.17"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="15" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="12"/>
+        <bx:score scoreTypeIdRef="n2" value="88"/>
+        <bx:score scoreTypeIdRef="pred" value="0.12"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="16" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="17"/>
+        <bx:score scoreTypeIdRef="n2" value="83"/>
+        <bx:score scoreTypeIdRef="pred" value="0.17"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="17" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="16"/>
+        <bx:score scoreTypeIdRef="n2" value="83"/>
+        <bx:score scoreTypeIdRef="pred" value="0.16"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="18" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="15"/>
+        <bx:score scoreTypeIdRef="n2" value="84"/>
+        <bx:score scoreTypeIdRef="pred" value="0.15"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="19" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="14"/>
+        <bx:score scoreTypeIdRef="n2" value="85"/>
+        <bx:score scoreTypeIdRef="pred" value="0.14"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="20" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="22"/>
+        <bx:score scoreTypeIdRef="n2" value="77"/>
+        <bx:score scoreTypeIdRef="pred" value="0.22"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="21" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="23"/>
+        <bx:score scoreTypeIdRef="n2" value="76"/>
+        <bx:score scoreTypeIdRef="pred" value="0.23"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="22" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="15"/>
+        <bx:score scoreTypeIdRef="n2" value="84"/>
+        <bx:score scoreTypeIdRef="pred" value="0.15"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="23" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="13"/>
+        <bx:score scoreTypeIdRef="n2" value="85"/>
+        <bx:score scoreTypeIdRef="pred" value="0.13"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="24" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="12"/>
+        <bx:score scoreTypeIdRef="n2" value="87"/>
+        <bx:score scoreTypeIdRef="pred" value="0.12"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="25" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="17"/>
+        <bx:score scoreTypeIdRef="n2" value="82"/>
+        <bx:score scoreTypeIdRef="pred" value="0.17"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="26" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="19"/>
+        <bx:score scoreTypeIdRef="n2" value="80"/>
+        <bx:score scoreTypeIdRef="pred" value="0.19"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="27" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="21"/>
+        <bx:score scoreTypeIdRef="n2" value="78"/>
+        <bx:score scoreTypeIdRef="pred" value="0.21"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="28" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="24"/>
+        <bx:score scoreTypeIdRef="n2" value="75"/>
+        <bx:score scoreTypeIdRef="pred" value="0.24"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="29" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="22"/>
+        <bx:score scoreTypeIdRef="n2" value="77"/>
+        <bx:score scoreTypeIdRef="pred" value="0.22"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+      <bx:occurrence>
+        <bx:position xsi:type="bx:SequencePosition">
+          <bx:point pos="30" xsi:type="bx:SequencePoint"/>
+        </bx:position>
+        <bx:score scoreTypeIdRef="n1" value="24"/>
+        <bx:score scoreTypeIdRef="n2" value="75"/>
+        <bx:score scoreTypeIdRef="pred" value="0.24"/>
+        <bx:score scoreTypeIdRef="n40" value="-"/>
+        <bx:score scoreTypeIdRef="n40f" value="-"/>
+        <bx:score scoreTypeIdRef="n59" value="-"/>
+        <bx:score scoreTypeIdRef="n59f" value="-"/>
+      </bx:occurrence>
+    </bx:annotation>
+  </bx:blockWithOccurrenceReferences>
+</nr:norsOutput>
+
