@@ -31,6 +31,7 @@ def getContentIds(data):
 			res.append(i)
 	return res
 
+
 def writeBXD(data,outFile):
 	DI = "http://rostlab.org/disulfinder/output"
 	BX = "http://bioxsd.org/BioXSD-1.1"
@@ -41,29 +42,34 @@ def writeBXD(data,outFile):
 	E = ElementMaker(namespace=BX, nsmap = NS_MAP)
 	DI = ElementMaker(namespace = DI, nsmap = NS_MAP)
 	
+	flipMap =  { " " : "0" , "*" : "1"}
+	
 	channel = E.annotation(
-                        E.feature(),
+                        E.feature(
+				E.name("Cystein disulfide bonding"),
+				E.equalConcept(term="Binary cystein bonding map inside of one chain")
+			),
                         E.condensedReferences(
-                                E.methodIDRef("M#di")
+                                E.methodIdRef("M#di")
                         )
                 )
 
 
 
 	for dsID in getContentIds(data):
-		item = E.occurence(
+		item = E.occurrence(
 			E.position(
-				E.point({"pos" : str(dsID), XS + "type" : "bxSequencePoint"}),
-				{ XS + "type" : "bxSequencePosition"}
+				E.point({"pos" : str(dsID), XS + "type" : "bx:SequencePoint"}),
+				{ XS + "type" : "bx:SequencePosition"}
 			),
 			E.score(
-				scoreTypeIdRef="S#DB_state",value=str(data['DB_state'][dsID])
+				scoreTypeIdRef="S#st",value=str(data['DB_state'][dsID])
 			),
 			E.score(
-				scoreTypeIdRef="S#DB_conf",value=str(data['DB_conf'][dsID])
+				scoreTypeIdRef="S#co",value=str(data['DB_conf'][dsID])
 			),
 			E.score(
-				scoreTypeIdRef="S#DB_flip",value=str(data['DB_flip'][dsID])
+				scoreTypeIdRef="S#fl",value=flipMap[data['DB_flip'][dsID]]
 			)
 		)
 		channel.append(item)
@@ -76,24 +82,25 @@ def writeBXD(data,outFile):
 			E.sequence("".join(data['AA'])),{XS+"type" : "bx:GeneralAminoacidSequenceRecord"  }
 		)
 	),
-        E.blockWithOccurenceReferences(
+        E.blockWithOccurrenceReferences(
                 E.method(
                         E.categoryConcept({
 				"accession" : "operation_1850",
-				"conceptURI" : "http://edamontology.org/operation_1850",
+				"conceptUri" : "http://edamontology.org/operation_1850",
 				"ontologyName" : "EDAM",
 				"term" : "Protein cysteine and disulfide bond assignment"
 			}),
                         E.citation(date="2013-06-28"),
 			localId="M#di",name="disulfinder"
                 ),
-                E.scoreType(localId="S#DB_stat"),
-                E.scoreType(localId="S#DB_conf"),
-                E.scoreType(localId="S#DB_flip"),
+                E.scoreType(localId="S#st"),
+                E.scoreType(localId="S#co"),
+                E.scoreType(localId="S#fl"),
                 
                 channel
                 
-        )
+        ),
+	{ XS+"schemaLocation": "http://rostlab.org/disulfinder/output http://i12r-tbl.informatik.tu-muenchen.de/~alex/disulfinder_output.xsd" }
 
 	)
 	
