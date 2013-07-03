@@ -24,6 +24,7 @@ NORSnet predicts unstructured loops in proteins.</wsdl:documentation>
 					</xs:element>
 					<!-- element for input -->
 					<xs:element ref="input:sequence"/>
+					<!--TODO: add the two missing input files -->
 				</xs:sequence>
 			</xs:complexType>
 
@@ -73,7 +74,7 @@ Disulfinder predicts cystein disulfide bonding state and connectivity. [http://e
 
 
 	<wsdl:binding name="NorsnetHTTPBinding" interface="NorsnetWebAPI" type="http://www.w3.org/ns/wsdl/http" whttp:methodDefault="GET">
-		<wsdl:documentation>The RESTful HTTP binding for the Nosrnet service.</wsdl:documentation>
+		<wsdl:documentation>The RESTful HTTP binding for the Norsnet service.</wsdl:documentation>
 
 		<wsdl:fault ref="norsnetFault" whttp:code="500"/><!--Internal Server Error-->
 

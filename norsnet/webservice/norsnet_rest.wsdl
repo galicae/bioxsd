@@ -24,6 +24,7 @@ NORSnet predicts unstructured loops in proteins.</wsdl:documentation>
 					</xs:element>
 					<!-- element for input -->
 					<xs:element ref="input:sequence"/>
+					<!--TODO: add the two missing input files -->
 				</xs:sequence>
 			</xs:complexType>
 
@@ -73,7 +74,7 @@ Disulfinder predicts cystein disulfide bonding state and connectivity. [http://e
 
 
 	<wsdl:binding name="NorsnetHTTPBinding" interface="NorsnetWebAPI" type="http://www.w3.org/ns/wsdl/http" whttp:methodDefault="GET">
-		<wsdl:documentation>The RESTful HTTP binding for the Nosrnet service.</wsdl:documentation>
+		<wsdl:documentation>The RESTful HTTP binding for the Norsnet service.</wsdl:documentation>
 
 		<wsdl:fault ref="norsnetFault" whttp:code="500"/><!--Internal Server Error-->
 
@@ -82,7 +83,7 @@ Disulfinder predicts cystein disulfide bonding state and connectivity. [http://e
 			 
 			 Default input and output serialization format [2]
 			 [2] http://www.w3.org/TR/2007/REC-wsdl20-adjuncts-20070626/#_http_binding_default_rule_dsf -->
-		<wsdl:operation ref="getDsBonds" whttp:location="getDsBonds" whttp:method="POST"/>
+		<wsdl:operation ref="getDisorderPrediction" whttp:location="getDisorderPrediction" whttp:method="POST"/>
 		<!-- http://www.w3.org/TR/wsdl20-primer/#more-bindings-http Trailing / in {} means pass the rest of the message in the HTTP message body. But see http://tech.groups.yahoo.com/group/rest-discuss/message/9962. Message body with GET is convoluted, let's use POST for the message with large alignment. -->
 		<!-- http://i12r-tbl.informatik.tu-muenchen.de/~alex/norsnet/REST/getDsBonds -->
 		<wsdl:operation ref="getVersion" whttp:location="getVersion" whttp:method="GET"/>
