@@ -1,0 +1,14 @@
+Package: disulfxml
+Version: 0.1-1
+Architecture: all
+Maintainer: Nikolaos Papadopoulos <papadopn@in.tum.de>
+Installed-Size: 67
+Depends: python (>= 2.7), python (<< 2.8)
+Section: python
+Priority: optional
+Homepage: https://github.com/galicae/bioxsd
+Description: Creates BioXSD compliant XML from disulfinder
+ This package contains a Python script that will wrap disulfinder output
+ with BioXSD XML tags. It is thus the hope of the authors to contribute towards
+ the unification of all formats in Bioinformatics, thus sparing the coming
+ generations of having to write parsers for everything.

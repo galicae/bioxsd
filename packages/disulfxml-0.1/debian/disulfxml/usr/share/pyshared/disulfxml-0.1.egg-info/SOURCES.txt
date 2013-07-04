@@ -1,0 +1,6 @@
+disulfxml
+setup.py
+disulfxml.egg-info/PKG-INFO
+disulfxml.egg-info/SOURCES.txt
+disulfxml.egg-info/dependency_links.txt
+disulfxml.egg-info/top_level.txt

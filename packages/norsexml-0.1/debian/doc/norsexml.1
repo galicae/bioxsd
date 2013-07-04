@@ -1,0 +1,46 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" (C) Copyright 2013 Nikolaos Papadopoulos <papadopn@in.tum.de>,
+.\"
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH NORSEXML 1 "July 1, 2013"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+norsexml \- python script to create BioXSD output for norsnet
+.SH SYNOPSIS
+.B norsexml
+.RI [ options ] " files" ...
+.br
+.SH DESCRIPTION
+This manual page documents briefly the
+.B norsexml
+command.
+.PP
+\fBnorsexml\fP is a python script that creates BioXSD compliant XML for the norsnet 
+prediction software. Its output is on standard out.
+.SH OPTIONS
+.TP
+.B \-h, \-\-help
+Show summary of options.
+.TP
+.B \-v, \-\-version
+Show version and exit.
+.TP
+.B \-i
+Input file
+.SH SEE ALSO
+.BR norsnet (1),
+.BR profnet_norsnet (1).
+.br

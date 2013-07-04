@@ -1,0 +1,1 @@
+../../../share/pyshared/norsexml.py

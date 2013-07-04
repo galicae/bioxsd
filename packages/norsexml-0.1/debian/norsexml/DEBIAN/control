@@ -1,0 +1,16 @@
+Package: norsexml
+Version: 0.1-1
+Architecture: all
+Maintainer: Nikolaos Papadopoulos <papadopn@in.tum.de>
+Installed-Size: 77
+Depends: python (>= 2.7.1-0ubuntu2), python (<< 2.8)
+Section: python
+Priority: optional
+Homepage: https://github.com/galicae/bioxsd
+Description: Creates BioXSD compliant XML out of norsnet output
+ The package contains a Python script that allows the creation of BioXSD
+ compliant XML from norsnet output. The code is based on the lxml library
+ and wraps the information from the norsnet columns in valid BioXSD XML tags.
+ This code was produced for a university practical exercise. The developers
+ hope to aid the unification of bioinformatics data formats and save
+ the coming generations of bioinformaticians the task of writing parsers.

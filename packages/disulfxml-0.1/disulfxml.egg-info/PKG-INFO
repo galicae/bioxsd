@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: disulfxml
+Version: 0.1
+Summary: Python script that creates BioXSD compliant XML from disulfinder output.
+Home-page: UNKNOWN
+Author: Alexander Betz
+Author-email: alexander.betz@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: optparse
+Requires: lxml
+Requires: collections

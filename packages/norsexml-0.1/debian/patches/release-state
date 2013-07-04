@@ -1,0 +1,79 @@
+Description: went over man page and gave script a little retouche
+ Made man page a little more informative and nice, added version command
+ to executable and fixed package description in control file.
+ .
+ norsexml (0.1-1) unstable; urgency=low
+ .
+   * source package automatically created by stdeb 0.6.0+git
+Author: Nikolaos Papadopoulos <papadopn@in.tum.de>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- norsexml-0.1.orig/norsexml
++++ norsexml-0.1/norsexml
+@@ -178,9 +178,13 @@ def parseNorsOutput(infile):
+ 
+ if __name__=="__main__":
+ 	import argparse
+-	parser = argparse.ArgumentParser(description='parseNorsOutput takes a norsnet output file and converts it to BioXSD.')
+-	parser.add_argument('-i', metavar='str', type=str, required=True, help='input file')
++	parser = argparse.ArgumentParser(description='norsexml takes a norsnet output file and converts it to BioXSD XML.')
++	parser.add_argument('-i', metavar='str', required=True, type=str, help='input file')
++	parser.add_argument('-v', '--version', action='version', version='%(prog)s 0.1')
+ 	args = parser.parse_args()
+ 	arguments = vars(args)
++	if args.version:
++		print "Version 0.1"
++		exit(1)
+ 	input_file = arguments['i']
+-	parseNorsOutput(input_file)
++	parseNorsOutput(input_file)
+\ No newline at end of file
+--- norsexml-0.1.orig/norsexml.py
++++ norsexml-0.1/norsexml.py
+@@ -178,9 +178,13 @@ def parseNorsOutput(infile):
+ 
+ if __name__=="__main__":
+ 	import argparse
+-	parser = argparse.ArgumentParser(description='parseNorsOutput takes a norsnet output file and converts it to BioXSD.')
+-	parser.add_argument('-i', metavar='str', type=str, required=True, help='input file')
++	parser = argparse.ArgumentParser(description='norsexml takes a norsnet output file and converts it to BioXSD XML.')
++	parser.add_argument('-i', metavar='str', required=True, type=str, help='input file')
++	parser.add_argument('-v', '--version', action='version', version='%(prog)s 0.1')
+ 	args = parser.parse_args()
+ 	arguments = vars(args)
++	if args.version:
++		print "Version 0.1"
++		exit(1)
+ 	input_file = arguments['i']
+ 	parseNorsOutput(input_file)
+\ No newline at end of file
+--- norsexml-0.1.orig/norsexml.egg-info/SOURCES.txt
++++ norsexml-0.1/norsexml.egg-info/SOURCES.txt
+@@ -1,3 +1,4 @@
++norsexml
+ norsexml.py
+ setup.py
+ norsexml.egg-info/PKG-INFO
+--- norsexml-0.1.orig/norsexml.egg-info/PKG-INFO
++++ norsexml-0.1/norsexml.egg-info/PKG-INFO
+@@ -1,7 +1,7 @@
+ Metadata-Version: 1.1
+ Name: norsexml
+ Version: 0.1
+-Summary: Bla bla bla
++Summary: Python script that creates BioXSD compliant XML from norsnet output.
+ Home-page: UNKNOWN
+ Author: Nikolaos Papadopoulos
+ Author-email: papadopn@in.tum.de

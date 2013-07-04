@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: norsexml
+Version: 0.1
+Summary: Bla bla bla
+Home-page: UNKNOWN
+Author: Nikolaos Papadopoulos
+Author-email: papadopn@in.tum.de
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: argparse
+Requires: lxml

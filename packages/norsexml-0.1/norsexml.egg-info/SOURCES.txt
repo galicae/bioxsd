@@ -1,0 +1,7 @@
+norsexml
+norsexml.py
+setup.py
+norsexml.egg-info/PKG-INFO
+norsexml.egg-info/SOURCES.txt
+norsexml.egg-info/dependency_links.txt
+norsexml.egg-info/top_level.txt

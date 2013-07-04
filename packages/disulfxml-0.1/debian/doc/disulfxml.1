@@ -1,0 +1,45 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" (C) Copyright 2013 Alexander Betz <alexander.betz@gmail.com>,
+.\"
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH DISULFXML 1 "July 1, 2013"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+disulfxml \- python script to create BioXSD output for disulfinder
+.SH SYNOPSIS
+.B disulfxml
+.RI [ options ] " files" ...
+.br
+.SH DESCRIPTION
+This manual page documents briefly the
+.B disulfxml
+command.
+.PP
+\fBnorsexml\fP is a python script that creates BioXSD compliant XML for the disulfinder 
+prediction software.
+.SH OPTIONS
+.TP
+.B \-h, \-\-help
+Show summary of options and exit
+.TP
+.B \-i, \-\-input
+Input file
+.TP
+.B \-o, \-\-output
+Output file
+.SH SEE ALSO
+.BR disulfinder (1)
+.br
