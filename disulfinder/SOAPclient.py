@@ -2,8 +2,8 @@ from pysimplesoap.client import SoapClient, SoapFault
 import sys
 
 client = SoapClient(
-    location = "http://localhost:8008/",
-    action = 'http://localhost:8008/', # SOAPAction
+    location = "http://alex.tbl:8008/",
+    action = 'http://alex.tbl:8008/', # SOAPAction
     namespace = "http://alex.tbl/webservice/disulfinder/disulfinder_soap.wsdl", 
     soap_ns='soap',
     trace = True,

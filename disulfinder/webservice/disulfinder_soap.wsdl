@@ -74,8 +74,8 @@ Disulfinder predicts cystein disulfide bonding state and connectivity.</wsdl:doc
 
 	
 	
-	<wsdl:message name="getDisulfinderMsg">
-		<wsdl:part name="parameters" element="getDsBonds"/>
+	<wsdl:message name="getDisulfinderRequestMsg">
+		<wsdl:part name="parameters" element="getDisulfinderRequest"/>
 	</wsdl:message>
 	<wsdl:message name="getDisulfinderResponseMsg">
 		<wsdl:part name="parameters" element="getDisulfinderResponse"/>
