@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions
+	name="DisulfinderWebAPI"
+	xmlns="http://rostlab.org/disulfinder/webservice"
+	targetNamespace="http://rostlab.org/disulfinder/webservice"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:output="http://rostlab.org/disulfinder/output"
+>
+
+	<wsdl:documentation>This document describes the Disulfinder Web service. 
+Disulfinder predicts cystein disulfide bonding state and connectivity.</wsdl:documentation>
+	
+	
+	
+	<wsdl:types>
+		
+		<xs:schema xmlns="http://rostlab.org/disulfinder/webservice" targetNamespace="http://rostlab.org/disulfinder/webservice">
+	
+			<xs:import namespace="http://rostlab.org/disulfinder/output" schemaLocation="http://i12r-tbl.informatik.tu-muenchen.de/~alex/disulfinder_output.xsd"/>
+		
+		
+			<xs:element name="getDsBonds" type="GetDisulfinderRequest"/>
+			<xs:complexType name="GetDisulfinderRequest">
+				<xs:element name="fastaSequence" type="xs:string" />
+			</xs:complexType>
+			
+			<xs:element name="getDisulfinderResponse" type="GetDisulfinderResponse"/>
+			<xs:complexType name="GetDisulfinderResponse">
+				<xs:element ref="output:disulfideBridgePrediction"/>
+			</xs:complexType>
+			
+			
+			
+			<xs:element name="getVersion">
+				<xs:element type="#none">
+			</xs:element>
+			
+			<xs:element name="getVersionResponse">
+				<xs:element name="version" type="xs:string"/>
+			</xs:element>
+			
+			
+			
+		</xs:schema>
+		
+	</wsdl:types>
+
+	
+	
+	<wsdl:message name="getDisulfinderRequestMsg">
+		<wsdl:part name="parameters" element="getDisulfinderRequest"/>
+	</wsdl:message>
+	<wsdl:message name="getDisulfinderResponseMsg">
+		<wsdl:part name="parameters" element="getDisulfinderResponse"/>
+	</wsdl:message>
+	
+	<wsdl:message name="getVersionMsg">
+		<wsdl:part name="parameters" element="getVersion"/>
+	</wsdl:message>
+	<wsdl:message name="getVersionResponseMsg">
+		<wsdl:part name="parameters" element="getVersionResponse"/>
+	</wsdl:message>
+	
+	
+	
+	<wsdl:portType name="DisulfinderWebAPI" sawsdl:modelReference="http://edamontology.org/topic_0601 http://edamontology.org/topic_2814 http://edamontology.org/operation_1850">
+	
+		<wsdl:documentation>This document describes the Disulfinder Web service. 
+Disulfinder predicts cystein disulfide bonding state and connectivity. [http://edamontology.org/topic_0601 Protein post-translational modification] [http://edamontology.org/topic_2814 Protein structure analysis] [http://edamontology.org/operation_1850  Protein cysteine and disulfide bond assignment] </wsdl:documentation>
+
+		<wsdl:operation name="getDsBonds">
+			<wsdl:documentation>Get cystein binding states and connection map [http://edamontology.org/operation_1850  Protein cysteine and disulfide bond assignment]</wsdl:documentation>
+			<sawsdl:attrExtensions sawsdl:modelReference="http://edamontology.org/operation_1850"/>
+			<wsdl:input message="getDisulfinderMsg"/>
+			<wsdl:output message="getDisulfinderResponseMsg"/>
+		</wsdl:operation>
+		
+		<wsdl:operation name="getVersion">
+			<wsdl:documentation>Get method version.</wsdl:documentation>
+			<wsdl:input message="getVersionMsg"/>
+			<wsdl:output message="getVersionResponseMsg"/>
+		</wsdl:operation>
+		
+	</wsdl:portType>
+	
+	
+	
+	<wsdl:binding name="DisulfinderSOAPBinding" type="DisulfinderWebAPI">
+		<wsdl:documentation>The SOAP binding for the Disulfinder service.</wsdl:documentation>
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getDsBonds">
+			<soap:operation soapAction="http://i12r-tbl.informatik.tu-muenchen.de/~alex/disulfinder/SOAP/getDsBonds"/>
+			<wsdl:input><soap:body use="literal"/></wsdl:input>
+			<wsdl:output><soap:body use="literal"/></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getVersion">
+			<soap:operation soapAction="http://i12r-tbl.informatik.tu-muenchen.de/~alex/disulfinder/SOAP/getDsBonds"/>
+			<wsdl:input><soap:body use="literal"/></wsdl:input>
+			<wsdl:output><soap:body use="literal"/></wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	
+	
+	
+	<wsdl:service name="DisulfinderSOAPService">
+		<wsdl:documentation>Disulfinder cystein disulfide bonding state prediction service.</wsdl:documentation>
+		<wsdl:port name="DisulfinderPort" binding="DisulfinderSOAPBinding">
+			<soap:address location="http://i12r-tbl.informatik.tu-muenchen.de/~alex/disulfinder/SOAP"/>
+		</wsdl:port>
+	</wsdl:service>
+	
+</wsdl:definitions>

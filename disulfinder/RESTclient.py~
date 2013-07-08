@@ -18,10 +18,9 @@ def wrapFasta(fasta):
 
 def main():
 	parser = OptionParser()
+
 	parser.add_option("-i","--input",dest="inFile")
 	parser.add_option("-o","--output",dest="outFile")
-
-	
 
 	options,args = parser.parse_args()
 	seqWrap = wrapFasta(options.inFile)
@@ -29,6 +28,7 @@ def main():
 	msg = et.fromstring(res.content)
 	xmlDoc = list(msg.iter())[1]
 	with open(options.outFile,"w+") as f:
+		
 		f.write(et.tostring(xmlDoc,pretty_print=True))
 	
 
