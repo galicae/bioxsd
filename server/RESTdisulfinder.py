@@ -1,4 +1,4 @@
-import flask
+from flask import Flask,request
 import time
 import subprocess
 import os
@@ -13,16 +13,20 @@ def timeFolder(prefix):
 		os.makedirs(folName)
 	return folName
 
+@app.route('/')
+def hello():
+	return "Hello World"
+
 @app.route('/getDsBonds',methods=['POST'])
 #handle getDsBonds request
-def getDsBonds(fastaString):
+def getDsBonds():
 	#create tmp folders
 	folder = timeFolder("tmp")
 	os.makedirs(folder+"/out")
 	
 	#write fasta to file because disulfinder requires a file as input
 	with open(folder+"/sequence.fasta","w+") as f:
-		f.write(fastaString)
+		f.write(request.data)
 	
 	#call disulfinder
 	shellCmd = " ".join(["disulfinder","-f",folder+"/sequence.fasta","-o",folder+"/out","-r",folder,"-d /data/uniprot_sprot","-c"])
@@ -40,7 +44,7 @@ def getDsBonds(fastaString):
 
 @app.route('/getVersion')	
 def getVersion():
-	p = subprocess.Popen("disulfinder --version",stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+	p = subprocess.Popen("disulfinder --version",stdout=subprocess.PIPE,stderr=subprocess.PIPE,shell=True)
 	out,err = p.communicate()
 	return err
 	
@@ -48,4 +52,5 @@ def getVersion():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+	app.debug=True
+	app.run(host='0.0.0.0')
