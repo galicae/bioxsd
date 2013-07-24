@@ -1,0 +1,22 @@
+Name: norsexml
+Contact: Nikolaos Papadopoulos <papadopn@in.tum.de>
+Homepage: https://github.com/galicae/bioxsd/tree/master/norsnet
+Software:
+ - Name: norsexml
+   Topic:
+     - XML parsing of norsnet output
+   Function:
+     - XML parsing of norsnet output
+   Input:
+     Data:
+       - norsnet output
+     Format:
+       - norsnet
+   Output:
+     Data:
+       - norsnet output
+     Format:
+       - BioXSD: 'http://edamontology.org/format_2352'
+       - PFRMAT DR
+   Interface:
+     - Command Line Interface: http://www.ebi.ac.uk/swo/interface/SWO_9000053

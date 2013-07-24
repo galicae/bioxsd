@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import sys
+from optparse import OptionParser
 from lxml import etree as et
 
 def parseNorsOutput(infile):
@@ -177,14 +178,10 @@ def parseNorsOutput(infile):
 
 
 if __name__=="__main__":
-	import argparse
-	parser = argparse.ArgumentParser(description='norsexml takes a norsnet output file and converts it to BioXSD XML.')
-	parser.add_argument('-i', metavar='str', required=True, type=str, help='input file')
-	parser.add_argument('-v', '--version', action='version', version='%(prog)s 0.1')
-	args = parser.parse_args()
-	arguments = vars(args)
-	if args.version:
-		print "Version 0.1"
-		exit(1)
-	input_file = arguments['i']
-	parseNorsOutput(input_file)
+	parser = OptionParser(version="%prog 0.1")
+
+	parser.add_option("-i","--input",dest="inFile",default=None,
+        	        help="norsnet output file")
+
+	options,args = parser.parse_args()
+	parseNorsOutput(options.inFile)
