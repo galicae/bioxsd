@@ -23,7 +23,7 @@ Last-Update: <YYYY-MM-DD>
 Index: norsexml-0.1/norsexml
 ===================================================================
 --- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ norsexml-0.1/norsexml	2013-06-30 15:47:37.000000000 +0200
++++ norsexml-0.1/norsexml	2013-07-24 13:33:48.000000000 +0200
 @@ -0,0 +1,186 @@
 +#!/usr/bin/python
 +import sys
@@ -213,8 +213,8 @@ Index: norsexml-0.1/norsexml
 +	parseNorsOutput(input_file)
 Index: norsexml-0.1/setup.py
 ===================================================================
---- norsexml-0.1.orig/setup.py	2013-06-30 15:47:37.000000000 +0200
-+++ norsexml-0.1/setup.py	2013-06-30 15:47:37.000000000 +0200
+--- norsexml-0.1.orig/setup.py	2013-07-24 13:33:35.000000000 +0200
++++ norsexml-0.1/setup.py	2013-07-24 13:33:48.000000000 +0200
 @@ -3,8 +3,9 @@
  from setuptools import setup
  setup(	name='norsexml',

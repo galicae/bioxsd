@@ -8,7 +8,7 @@ Homepage: https://github.com/galicae/bioxsd
 
 Package: disulfxml
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}
+Depends: ${misc:Depends}, ${python:Depends}, ${python-lxml:Depends}
 Description: Creates BioXSD compliant XML from disulfinder
  This package contains a Python script that will wrap disulfinder output 
  with BioXSD XML tags. It is thus the hope of the authors to contribute towards 

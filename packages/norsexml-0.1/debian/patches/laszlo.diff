@@ -1,0 +1,13 @@
+Index: norsexml-0.1/debian/doc/norsexml.1
+===================================================================
+--- norsexml-0.1.orig/debian/doc/norsexml.1	2013-07-24 13:22:07.000000000 +0200
++++ norsexml-0.1/debian/doc/norsexml.1	2013-07-24 13:30:30.691307751 +0200
+@@ -38,7 +38,7 @@
+ .B \-v, \-\-version
+ Show version and exit.
+ .TP
+-.B \-i
++.B \-i, \-\-input
+ Input file
+ .SH SEE ALSO
+ .BR norsnet (1),
